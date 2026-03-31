@@ -1,5 +1,5 @@
-double _add(double a, double b);
-double _sub(double a, double b);
-double _mul(double a, double b);
-double _div(double a, double b);
-double _car(double a);
+double add(double a, double b);
+double sub(double a, double b);
+double mul(double a, double b);
+double div(double a, double b);
+double car(double a);
