@@ -3,7 +3,7 @@
 #include <string.h>
 #include "./../include/calculator.h" 
 
-int main(int argc, char *argv[]){ 
+int main(int argc, char *argv[]){  
 	if (argc == 4)
 	{
 	char* op = argv[1]; 
