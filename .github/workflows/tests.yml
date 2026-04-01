@@ -16,7 +16,7 @@ jobs:
           make test
         
       - name: Test fonction add
-        run: 
+        run: |
           mkdir build
           cd build
           cmake ..
