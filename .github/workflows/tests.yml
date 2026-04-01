@@ -91,3 +91,17 @@ jobs:
           cmake ..
           make
           ./src/calculator sub 10 5
+  Test_Car:
+    runs-on: ubuntu-latest
+    needs: Compilation
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: Test fonction car
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make
+          ./src/calculator car 5
