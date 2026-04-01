@@ -16,6 +16,20 @@ jobs:
           cmake ..
           make
           make test
+          
+  Deployment:
+     runs-on: ubuntu-latest
+     steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: Deployment
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make
+          make test
 
   Test_Add:
     runs-on: ubuntu-latest
