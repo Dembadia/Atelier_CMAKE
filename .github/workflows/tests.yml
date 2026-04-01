@@ -16,11 +16,8 @@ jobs:
           make test
         
       - name: Test fonction add
-        run: |
-          last_directory=$(basename ${{ runner.workspace }})
-          git clone https://github.com/${{ github.repository }}.git
-          cd ./$last_directory
-    
+        run: 
+          mkdir build
           cd build
           cmake ..
           make
