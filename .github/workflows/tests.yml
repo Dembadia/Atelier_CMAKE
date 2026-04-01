@@ -19,7 +19,7 @@ jobs:
           
   Deployment:
      runs-on: ubuntu-latest
-     needs: Compilation
+     needs: Test_Add
      steps:
       - name: Checkout du dépôt
         uses: actions/checkout@v4
